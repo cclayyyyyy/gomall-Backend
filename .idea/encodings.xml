@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/gomall-common/common-log/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gomall-common/common-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gomall-common/common-service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gomall-common/common-util/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gomall-common/common-util/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gomall-common/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gomall-common/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gomall-manager/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gomall-manager/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gomall-model/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gomall-model/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gomall-server-gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gomall-service-client/service-cart-client/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gomall-service-client/service-order-client/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gomall-service-client/service-product-client/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gomall-service-client/service-user-client/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gomall-service-client/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gomall-service-client/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gomall-service/service-cart/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gomall-service/service-order/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gomall-service/service-pay/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gomall-service/service-product/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gomall-service/service-user/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gomall-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gomall-service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+  </component>
+</project>

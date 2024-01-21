@@ -1,0 +1,9 @@
+
+spring:
+  cloud:
+    nacos:
+      config:
+        server-addr: 192.168.64.6:8848
+  config:
+    import:
+      - nacos:service-user-dev.yml

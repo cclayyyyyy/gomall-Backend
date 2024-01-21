@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.atchen.gomall.manager.mapper.SysRoleMapper">
+
+    <!--  Map the queried fields -->
+    <resultMap id="sysRoleMap" type="com.atchen.gomall.model.entity.system.SysRole" autoMapping="true"></resultMap>
+
+    <!-- Columns commonly extracted for SELECT queries -->
+    <sql id="columns">
+        id,role_name,role_code,description,create_time,update_time,is_deleted
+    </sql>
+
+    <!--    Read all roles -->
+    <select id="findAll" resultMap="sysRoleMap">
+        select <include refid="columns" />
+            from sys_role where is_deleted=0
+    </select>
+
+    <!--    Method for deleting role(logical delete)   -->
+    <update id="delete">
+        update sys_role set is_deleted=1 where id=#{roleId}
+    </update>
+
+    <!--    Method for role update-->
+    <update id="update">
+        update sys_role set
+        <if test="roleName != null and roleName != ''">
+            role_name = #{roleName},
+        </if>
+        <if test="roleCode != null and roleCode != ''">
+            role_code = #{roleCode},
+        </if>
+        <if test="description != null and description != ''">
+            description = #{description},
+        </if>
+        update_time =  now()
+        where
+        id = #{id}
+    </update>
+
+    <!--    Method for role addition-->
+    <insert id="save">
+        insert into sys_role (
+            id,
+            role_name,
+            role_code,
+            description
+        ) values (
+            #{id},
+            #{roleName},
+            #{roleCode},
+            #{description}
+                 )
+    </insert>
+
+    <!--    Method for retrieving a list of roles-->
+    <select id="findByPage" resultMap="sysRoleMap">
+        select <include refid="columns" />
+        from sys_role
+        <where>
+            <if test="roleName != null and roleName != ''">
+                and role_name like concat('%',#{roleName},'%')
+            </if>
+            and is_deleted=0
+        </where>
+        order by id desc
+    </select>
+
+</mapper>

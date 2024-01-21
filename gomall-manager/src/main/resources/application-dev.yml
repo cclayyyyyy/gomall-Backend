@@ -1,0 +1,29 @@
+server:
+  port: 8501
+
+spring:
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.64.6:3306/db_gomall?characterEncoding=utf-8&useSSL=false&allowPublicKeyRetrieval=true
+    username: root
+    password: 1234
+  data:
+    redis:
+      host: 192.168.64.6
+      port: 6379
+mybatis:
+  mapper-locations: classpath:/mapper/*/*.xml
+  config-location: classpath:/mybatis-config.xml
+
+# Custom configuration.
+gomall:
+  auth:
+    noAuthUrls:
+      - /admin/system/index/login
+      - /admin/system/index/generateValidateCode
+  minio:
+    endpointUrl: http://192.168.64.6:9001
+    accessKey: admin
+    secretKey: admin123456
+    bucketName: gomall-bucket
